@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title_form">
+            <h1>Submit Your <span>Best</span> Designs</h1>
+        </div>
+        <form action="#">
+            <div class="field_form">
+                <div class="form_container1">
+                    <input type="text" required name="first name" placeholder="First name*">
+                    <input type="text" required name="last name" placeholder="Last name*">
+                </div>
+                <div class="form_container2">
+                    <input type="email" required name="email" placeholder="Email*">
+                    <input type="text" required name="company name" placeholder="Company name*">
+                </div>
+                <div class="form_container3">
+                    <input type="url" required name="website" placeholder="Company Website*">
+                    <select required name="Packages">
+                        <option value="" selected disabled>Choose Your Packadge</option>
+                        <option value="standart">Standart</option>
+                        <option value="universal">Universal</option>
+                    </select>
+                </div>
+            </div>
+            <fieldset class="fieldset_form">
+                <div class="title_fieldset">
+                    <h3>Add Your Best Design</h3>
+                </div>
+                <div class="field_fieldset">
+                    <div class="fieldset_container1">
+                        <input type="text" required placeholder="Design Project Name*">
+                        <select name="Category" required >
+                            <option value="" selected disabled>Best Design Category*</option>
+                        </select>
+                    </div>
+                    <div class="fieldset_container2">
+                        <textarea name="description" placeholder="Project Short Description "></textarea>
+                    </div>
+                </div>
+                <div class="fieldset_cotainer3">
+                    <input type="url" required placeholder="Add Your Best Design Url">
+                    <button>Add URL</button>
+                </div>
+                <button class="btn_save">Save and Add More Designs</button>
+            </fieldset>
+            <div class="privacy_submit">
+                <div class="checkbox_privacy">
+                    <label class="checkbox" for="checkbox">
+                        <input required id="checkbox" type="checkbox">
+                        <span class="style_checkbox"></span>
+                        <span class="text_checkbox"> I'd like to receive occasional insights from DesignRush</span>
+                    </label>
+                    <p>By submitting this form, I agree to DesignRush <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></p>
+                    <p>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+                </div> 
+                <div class="btn">
+                    <button class="btn_submit" type="submit">SUBMIT <img src="images/pointer_right.png" alt=""></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
